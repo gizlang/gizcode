@@ -15,6 +15,6 @@
 		"xterm-addon-canvas": "0.4.0-beta.9",
 		"xterm-addon-search": "0.11.0",
 		"xterm-addon-unicode11": "0.5.0",
-		"xterm-addon-webgl": "0.15.0-beta.8"
+		"xterm-addon-webgl": "0.16.0"
 	}
 }
