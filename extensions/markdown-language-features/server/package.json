@@ -1,18 +1,6 @@
 {
-  "name": "vscode-markdown-languageserver",
-  "description": "Markdown language server",
-  "version": "0.3.0",
   "author": "Microsoft Corporation",
-  "license": "MIT",
-  "engines": {
-    "node": "*"
-  },
-  "main": "./out/node/main",
   "browser": "./dist/browser/main",
-  "files": [
-    "dist/**/*.js",
-    "out/**/*.js"
-  ],
   "dependencies": {
     "@vscode/l10n": "^0.0.11",
     "vscode-languageserver": "^8.0.2",
@@ -21,14 +9,23 @@
     "vscode-markdown-languageservice": "^0.3.0",
     "vscode-uri": "^3.0.3"
   },
+  "description": "Markdown language server",
   "devDependencies": {
     "@types/node": "16.x"
   },
+  "engines": {
+    "node": "*"
+  },
+  "files": [ "dist/**/*.js", "out/**/*.js" ],
+  "license": "MIT",
+  "main": "./out/node/main",
+  "name": "vscode-markdown-languageserver",
   "scripts": {
     "compile": "gulp compile-extension:markdown-language-features-server",
+    "compile-web": "npx webpack-cli --config extension-browser.webpack.config --mode none",
     "prepublishOnly": "npm run compile",
     "watch": "gulp watch-extension:markdown-language-features-server",
-    "compile-web": "npx webpack-cli --config extension-browser.webpack.config --mode none",
     "watch-web": "npx webpack-cli --config extension-browser.webpack.config --mode none --watch --info-verbosity verbose"
-  }
+  },
+  "version": "0.3.0"
 }
