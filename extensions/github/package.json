@@ -114,7 +114,7 @@
     } ]
   },
   "dependencies": {
-    "@octokit/rest": "19.0.13",
+    "@octokit/rest": "21.1.1",
     "tunnel": "^0.0.6"
   },
   "description": "%description%",
